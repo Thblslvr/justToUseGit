@@ -1,0 +1,60 @@
+
+*{
+    padding: 0px;
+    margin: 0;
+}
+.wrapper{ /*Когда вы задаёте элементу position: sticky, его родитель автоматически становится «липким» контейнером!*/
+    border: 1px solid #000;
+    width: 200px;
+    height: 800px;
+    position: relative;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+
+.wrapper__sticky{ /*«Липкий» элемент — это элемент, которому мы задали position: sticky. Элемент будет становиться плавающим, как только область видимости достигнет определённой позиции, например top: 0px.*/
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    background-color: aqua;
+}
+
+.wrapper__absolute{
+    position: absolute;
+    background: red;
+    border: 1px solid #000;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    z-index: 12;
+}
+
+.wrapper__relative{
+    position: relative;
+    border: 1px solid #000;
+    top: 1400px;
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper__fixed{
+    position: fixed;
+    top: 200px;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+}
+
+/* .main-container{ border: 1px solid #000;}
+.main-container *{background:#aaa; border: 1px solid #000;}
+.main-header{
+  height:50px; background:#aaa; border-color:red;
+}
+.main-content{
+  min-height:800px;
+}
+
+.main-header{position:-webkit-sticky; position:sticky; top:0;} */
